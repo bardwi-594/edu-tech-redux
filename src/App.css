@@ -1,0 +1,702 @@
+@font-face {
+  font-family: "Tangerine";
+  src: url("/fonts/Tangerine-Bold.ttf");
+}
+.tangerine {
+  font-family: "Tangerine";
+}
+
+html {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+.wrapper .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav {
+  margin: 4rem 0;
+}
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .nav_logo h1 {
+  font-weight: 100;
+}
+.nav .nav_items .item {
+  border-bottom: 3px solid transparent;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+}
+.nav .nav_items .item.active,
+.nav .nav_items .item:hover {
+  color: #fe7865;
+  border-color: currentColor;
+}
+
+.nav .nav_items .item a {
+  color: inherit;
+  font-weight: bold;
+}
+.nav .nav_items .item a.active {
+  color: #000;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+.list li {
+  display: inline-block;
+  margin: 0 0.8rem;
+}
+
+.help_section {
+  margin-top: 10rem;
+}
+.help_section .container {
+  text-align: center;
+}
+.help_section .container > div {
+  text-align: left;
+  display: inline-block;
+}
+.help_section .container .input_container {
+  margin-top: 5rem;
+}
+
+/****Input section****/
+.input_container {
+  position: relative;
+}
+.input_container input {
+  z-index: 0;
+}
+.input_container span.ico {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input {
+  position: relative;
+  padding: 10px;
+  outline: none;
+  width: 50rem;
+  border: 2px solid #000;
+  padding: 2.5rem 2rem;
+}
+.input::placeholder {
+  color: #c7c7c7;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: "Poppins";
+  letter-spacing: 2px;
+}
+
+.text_container h1.heading {
+  color: #2b2e3f;
+  margin: 1.5rem 0;
+  font-size: 4rem;
+}
+
+.text_container p {
+  color: #c7c7c7;
+}
+
+/****Login section****/
+
+.login_wrapper {
+  display: flex;
+  height: 100vh;
+}
+.login_wrapper .login_banner {
+  flex-basis: 55%;
+  padding: 0 5rem;
+}
+.login_wrapper .login_banner .login_banner_bg {
+  height: 100%;
+  background-image: url("/images/Group%20538.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.login_wrapper .login_form_container {
+  padding: 0 5rem;
+  flex-basis: 45%;
+  display: flex;
+  align-items: center;
+}
+.login_wrapper .login_form_container h3.tangerine {
+  font-family: "Tangerine";
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 3.6rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.62px;
+  text-align: left;
+  color: #4d4d4d;
+  margin-bottom: -3.5rem;
+}
+
+.login_wrapper .login_form_container h3.tangerine .tangerine_F {
+  font-size: 9.6rem;
+  font-weight: bold;
+  letter-spacing: -1.66px;
+  color: #fe7865;
+}
+.login_wrapper .login_form_container .text_container h1.heading {
+  font-size: 5rem;
+  font-weight: 600;
+}
+.login_wrapper .login_form_container .text_container h1.heading .tangerine {
+  color: #fe7865;
+  font-size: 8rem;
+}
+.login_wrapper .login_form_container .text_container h1.heading .bold {
+  color: #fe7865;
+}
+.login_wrapper .login_form_container .text_container p {
+  margin-bottom: 6rem;
+}
+
+.login_form .input_container {
+  margin: 1rem 0;
+  border:none;
+}
+.login_form .input_container input {
+  border: 1px solid #d8d8d8;
+  outline: 2px solid transparent;
+  width: 90%;
+  padding: 1.5rem 2rem;
+}
+.login_form .input_container input::placeholder {
+  text-transform: none !important;
+  letter-spacing: none;
+}
+.login_form .input_container input:focus {
+  outline: 2px solid #fe7865;
+}
+
+.login_form .input_container input:focus::placeholder {
+  color: #000;
+}
+
+.login_form a {
+  color: rgba(254, 120, 101, 0.86);
+  line-height: 2rem;
+  font-size: 1.4rem;
+  text-align: right;
+  width: 90%;
+  display: block;
+}
+
+.login_form button.btn {
+  text-transform: uppercase;
+  width: 90%;
+  margin: 9rem 0 0 0;
+  font-weight: bold;
+  padding: 1.5rem 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: #fe7865;
+}
+
+button.btn {
+  display: block;
+  background-color: none;
+  border: 1px solid;
+  width: 100%;
+  background-color: #fe7865;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 1.1rem 0;
+  letter-spacing: 2px;
+}
+
+/****Signup section****/
+
+.signup_wrapper {
+  display: flex;
+  /*height: 100vh;*/
+  height:100%;
+}
+.signup_wrapper .signup_banner {
+  flex-basis: 55%;
+  padding: 0 5rem;
+}
+.signup_wrapper .signup_banner .signup_banner_bg {
+  height: 100%;
+  background-image: url("/images/Group%20538.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.signup_wrapper .signup_form_container {
+  padding: 0 5rem;
+  flex-basis: 45%;
+  display: flex;
+  align-items: center;
+}
+.signup_wrapper .signup_form_container h3.tangerine {
+  font-family: "Tangerine";
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 3.6rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.62px;
+  text-align: left;
+  color: #4d4d4d;
+  /*margin-bottom: -3.5rem;*/
+  margin: 5% 0 5% 0;
+  
+}
+
+.signup_wrapper .signup_form_container h3.tangerine .tangerine_F {
+  font-size: 9.6rem;
+  font-weight: bold;
+  letter-spacing: -1.66px;
+  color: #fe7865;
+}
+.signup_wrapper .signup_form_container .text_container h1.heading {
+  font-size: 5rem;
+  font-weight: 600;
+}
+.signup_wrapper .signup_form_container .text_container h1.heading .tangerine {
+  color: #fe7865;
+  font-size: 8rem;
+}
+.signup_wrapper .signup_form_container .text_container h1.heading .bold {
+  color: #fe7865;
+}
+.signup_wrapper .signup_form_container .text_container p {
+  margin-bottom: 6rem;
+}
+
+.signup_form .input_container {
+  margin: 1rem 0;
+  border:none;
+}
+.signup_form .input_container input {
+  border: 1px solid #d8d8d8;
+  outline: 2px solid transparent;
+  width: 90%;
+  padding: 1.5rem 2rem;
+}
+.signup_form .input_container input::placeholder {
+  text-transform: none !important;
+  letter-spacing: none;
+}
+.signup_form .input_container input:focus {
+  outline: 2px solid #fe7865;
+}
+
+.signup_form .input_container input:focus::placeholder {
+  color: #000;
+}
+
+.signup_form a {
+  color: rgba(254, 120, 101, 0.86);
+  line-height: 2rem;
+  font-size: 1.4rem;
+  text-align: right;
+  width: 90%;
+  display: block;
+}
+
+.signup_form button.btn {
+  text-transform: uppercase;
+  width: 90%;
+  font-weight: bold;
+  padding: 1.5rem 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: #fe7865;
+  margin: 9rem 0 5% 0;
+}
+
+button.btn {
+  display: block;
+  background-color: none;
+  border: 1px solid;
+  width: 100%;
+  background-color: #fe7865;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 1.1rem 0;
+  letter-spacing: 2px;
+}
+
+/****Dashboard*****/
+
+.dashboard_wrapper > .container {
+  display: flex;
+}
+
+.dashboard_wrapper .dashboard_sidebar {
+  flex-basis: 20%;
+}
+.dashboard_wrapper .dashboard_sidebar .sidebar_heading {
+  border-bottom: 3px solid currentColor;
+  font-size: 2.5rem;
+  color: #6074dd;
+  font-weight: 500;
+}
+.dashboard_wrapper .dashboard_sidebar .sidebar_chapter_info {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+.dashboard_wrapper .dashboard_sidebar .sidebar_chapter_info span {
+  color: #c7c7c7;
+}
+.dashboard_wrapper .dashboard_sidebar .sidebar_nav .chapters {
+  list-style: none;
+  padding: 0;
+}
+.dashboard_wrapper .dashboard_sidebar .sidebar_nav .chapters .chapter {
+  font-size: 1.6rem;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.09);
+  padding: 2px 1rem;
+  margin: 2.2rem 0;
+  cursor: pointer;
+}
+.dashboard_wrapper
+  .dashboard_sidebar
+  .sidebar_nav
+  .chapters
+  .chapter
+  .chapter_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chapter .chapter_content {
+  text-align: center;
+}
+.chapter .chapter_content .sessions {
+  list-style: none;
+  display: inline-block;
+  margin: 1.5rem 0;
+}
+.chapter .chapter_content .sessions li {
+  text-align: left;
+  margin: 1rem 0;
+  color: #515151;
+}
+.chapter .chapter_content .sessions li .session_text {
+  margin-right: 2rem;
+}
+.chapter .chapter_content .sessions li .session_status {
+  text-align: center;
+}
+
+.chapter .chapter_content .sessions li.session_complete .session_status {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 1.2rem;
+  color: #fff;
+  background-image: linear-gradient(91deg, #fe7865 0%, #ff381c 98%);
+}
+.chapter .chapter_content .sessions li.session_progress {
+  color: #ffbe74;
+}
+.dashboard_wrapper
+  .dashboard_sidebar
+  .sidebar_nav
+  .chapters
+  .chapter
+  span:not(:first-child) {
+  font-size: 1.2rem;
+}
+
+.dashboard_wrapper .dashboard_sidebar .sidebar_nav .subchapters {
+  list-style: none;
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  color: #c7c7c7;
+  margin-top: 1rem;
+}
+.dashboard_wrapper .dashboard_sidebar .sidebar_nav .subchapters .subchapter {
+  margin: 1rem 0;
+}
+
+.dashboard_wrapper .dashboard_main {
+  flex-basis: 80%;
+}
+.dashboard_wrapper .dashboard_main .welcome_text_container {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.dashboard_wrapper .dashboard_main .welcome_text_container .search {
+  margin-left: auto;
+}
+
+.welcome_text_container .search .input_container input {
+  width: 40rem;
+  border-color: #6074dd;
+  padding: 1.2rem 1rem;
+}
+
+.dashboard_wrapper .dashboard_main h1.dashboard_welcome_text {
+  margin-left: 2rem;
+}
+.dashboard_wrapper .dashboard_main ul.path {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 2rem;
+}
+.dashboard_wrapper .dashboard_main ul.path li {
+  display: inline-block;
+}
+.dashboard_wrapper .dashboard_main ul.path li:not(:last-child):after {
+  content: " >";
+  display: inline-block;
+  width: 1rem;
+  height: 1.2rem;
+  margin: 0 0.5rem;
+}
+.dashboard_wrapper .dashboard_main .activities {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dashboard_wrapper .dashboard_main .activities > div {
+  flex-basis: 25%;
+  padding: 1.5rem 1.5rem;
+}
+.dashboard_wrapper .dashboard_main .activities .activity_card {
+  width: 100%;
+  box-shadow: 3px 3px 11px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.dashboard_wrapper .dashboard_main .activities .activity_card_img img {
+  width: 100%;
+}
+.dashboard_wrapper .dashboard_main .activities .activity_card_content {
+  padding: 1rem 1.2rem;
+}
+.dashboard_wrapper
+  .dashboard_main
+  .activities
+  .activity_card_content
+  .activity_card_heading {
+  color: #2b2e3f;
+}
+.dashboard_wrapper
+  .dashboard_main
+  .activities
+  .activity_card_content
+  .activity_card_desc {
+  color: #c7c7c7;
+}
+
+.activity_details {
+  display: flex;
+  margin-left: 2rem;
+}
+.activity_details .activity_content {
+  margin: 0 3rem;
+}
+
+.dashboard_main .input_container {
+  margin: 2rem 0;
+  text-align: center;
+}
+.dashboard_main .input_container input {
+  padding: 1.1rem 1.5rem;
+  width: 60rem;
+}
+/* LESSONS  */
+.dashboard_wrapper .dashboard_main .activities.lessons {
+  display: flex;
+}
+.dashboard_wrapper .dashboard_main .activities.lessons > div {
+  flex-basis: 50%;
+}
+.lessons .lessons_card {
+  border-radius: 1rem;
+  box-shadow: 3px 3px 1rem 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #6074dd;
+  padding: 2rem;
+}
+.lessons .lessons_card .lesson_card_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lessons .lessons_card .lesson_card_heading h3 {
+  color: #6074dd;
+}
+
+.lessons .lessons_card .lesson_card_heading .lesson_time {
+  color: #afafaf;
+}
+.lessons .lessons_card .lesson_card_status {
+  margin: 0.5rem 0;
+}
+.lessons .lessons_card .lesson_card_status.status_complete {
+  color: #018b21;
+}
+.lessons .lessons_card p {
+  color: #6c6d79;
+  font-size: 1.4rem;
+}
+
+.codeplayground .codeplayground_nav {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.codeplayground .codeplayground_nav li {
+  text-transform: capitalize;
+  padding: 1rem 6rem;
+  font-size: 1.6rem;
+}
+
+.codeplayground .playground_content {
+  border: 1px solid #acacac;
+  margin-top: -2rem;
+  padding: 4rem 3rem 4rem 3rem;
+}
+.codeplayground .playground_content .learn_cta,
+.codeplayground .playground_content .execute_cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.codeplayground .playground_content .learn_cta a,
+.codeplayground .playground_content .execute_cta a {
+  font-weight: bold;
+}
+.codeplayground .playground_content .learn_cta .question_select,
+.codeplayground .playground_content .execute_cta .question_select {
+  outline: 0;
+  background-color: #fff;
+  border: 1px solid 7f7f7f;
+  font-size: 2.2rem;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+}
+.codeplayground .playground_content .learn_cta .question_select option,
+.codeplayground .playground_content .execute_cta .question_select option {
+  border-radius: 10rem;
+  margin: 1rem 0;
+}
+.codeplayground .playground_content .learn_content {
+  margin: 3rem 0;
+}
+.codeplayground .playground_content .learn_content h2 {
+  color: #3b3b3b;
+}
+.codeplayground .playground_content .learn_content p {
+  margin-top: 1rem;
+  text-indent: 30rem;
+  color: #c8c8c8;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  text-align: justify;
+}
+.codeplayground .playground_content .playground_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.codeplayground .playground_content .playground_buttons .btn {
+  font-weight: bold;
+  letter-spacing: normal;
+  width: auto;
+  font-family: inherit;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.codeplayground .playground_content .execute_content {
+  margin: 2rem;
+}
+.codeplayground .playground_content .execute_content p {
+  color: #c8c8c8;
+}
+
+.ide {
+  margin: 3rem 0 7rem 0;
+  display: flex;
+}
+.ide > div {
+  flex-basis: 50%;
+  margin: 0 15px;
+}
+.ide .terminal {
+  height: 100%;
+  overflow-x: auto;
+}
+.ide .terminal #xterm {
+}
+
+.codeplayground .btn {
+  background-color: #fff;
+  border: 1px solid #7f7f7f;
+  color: #3b3b3b;
+  text-transform: uppercase;
+  padding: 1rem 6rem;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.codeplayground .btn.active {
+  background-color: #3b3b3b;
+  color: #fff;
+}
+
+.Futo {
+  font-family: "Tangerine";
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 3.6rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.62px;
+  text-align: left;
+  color: #4d4d4d;
+}
+
+.Futo .style_F {
+  font-size: 9.6rem;
+  font-weight: bold;
+  letter-spacing: -1.66px;
+  color: #fe7865;
+}
